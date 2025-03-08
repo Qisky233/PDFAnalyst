@@ -1,21 +1,6 @@
 <template>
   <div class="dashboard">
-    11
     <canvas ref="canvasRef" class="particle-canvas"></canvas>
-
-    <!-- 导入导航栏组件 -->
-    <NavBar @toggle-drawer="toggleDrawer" />
-
-    <!-- 移动端抽屉式导航 -->
-    <el-drawer v-model="drawerVisible" direction="rtl" size="200px">
-      <ul class="drawer-menu">
-        <li><a href="/">首页</a></li>
-        <li><a href="/papers">论文全览</a></li>
-        <li><a href="/analysis">数据分析</a></li>
-        <li><a href="/wordCloud">云词统计</a></li>
-        <li><a href="/rcharts">生成R图</a></li>
-      </ul>
-    </el-drawer>
 
     <div class="container">
       <!-- 说明部分 -->
@@ -59,7 +44,6 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 import { initParticles, destroyParticles } from './particles';
 import { initCharts, destroyCharts, handleResize } from './charts';
-import NavBar from '@/components/navBar/index.vue'; // 导入导航栏组件
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
@@ -72,13 +56,6 @@ const canvasRef = ref(null);
 const chart1 = ref(null);
 const chart2 = ref(null);
 const chart3 = ref(null);
-
-const drawerVisible = ref(false); // 控制抽屉是否可见
-
-// 切换抽屉显隐
-const toggleDrawer = () => {
-  drawerVisible.value = !drawerVisible.value;
-};
 
 onMounted(() => {
   initParticles(canvasRef.value);
