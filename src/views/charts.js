@@ -7,6 +7,7 @@ const annualData = {
     series: [1232, 1433, 1765, 1982, 2176, 2354]
 }
 
+
 const keywordsData = [
     { name: '人工智能', value: 100 },
     { name: '机器学习', value: 95 },
