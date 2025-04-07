@@ -104,3 +104,16 @@
   .shape-select {
     width: 160px;
   }
+  /* 新增上传区域样式 */
+.upload-section {
+  width: 90%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+  .tip {
+    color: #909399;
+    font-size: 12px;
+  }
+}

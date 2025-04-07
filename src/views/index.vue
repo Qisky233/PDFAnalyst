@@ -3,7 +3,6 @@
     <canvas ref="canvasRef" class="particle-canvas"></canvas>
 
     <div class="container">
-      <!-- 说明部分 -->
       <div id="overview" class="intro">
         <h2>基于PDF的论文分析平台<small><br>（中医药方向）</small></h2>
         <div class="intro-content">
