@@ -2,6 +2,44 @@
 
 本项目旨在通过数据可视化的方式展示唐诗的魅力，帮助用户更直观地了解唐诗的内容和结构。
 
+## 演示
+
+在线演示：[https://poem.ganxy03.cn/](https://poem.ganxy03.cn/)  
+在线演示：[https://poem-win.ganxy03.cn/](https://poem-win.ganxy03.cn/)
+
+`服务器性能有限 在线演示延迟相当长 请耐心等待`
+
+<div class="image-row">
+    <img src="./assets/image/yanshi.gif" alt="演示" width="800">
+    <img src="./assets/image/0.png" alt="图片0">
+</div>
+<div class="image-row">
+    <img src="./assets/image/1.png" alt="图片1">
+    <img src="./assets/image/2.png" alt="图片2">
+</div>
+<div class="image-row">
+    <img src="./assets/image/3.png" alt="图片3">
+    <img src="./assets/image/4.png" alt="图片4">
+</div>
+<div class="image-row">
+    <img src="./assets/image/5.png" alt="图片5">
+    <img src="./assets/image/6.png" alt="图片6">
+</div>
+
+<style>
+    .image-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .image-row img {
+        width: 48%; /* 每张图片占行宽的48%，留出2%的间隔 */
+    }
+</style>
+
+
+
+
 ## 功能特性
 - 唐诗数据的可视化展示
 - 支持按主题、作者、时间等维度筛选
@@ -9,6 +47,7 @@
 - 后端支持基于 Go 的服务
 
 ## 项目结构
+```tree
 /project-root
 ├── /poet-ui/      # 前端目录
 │   ├── /src/         # 源代码目录

@@ -1,5 +1,5 @@
 // 基础 URL
-const BASE_URL = 'http://localhost:8080';
+const BASE_URL = '/api';
 
 // 1. 获取数据统计
 export const getDataStats = async () => {

@@ -173,7 +173,7 @@ const pendingReviewCount = computed(() => authors.value.filter(a => !a.imgUrl).l
 // 加载100位作者数据
 const loadAuthors = async () => {
   try {
-    const response = await axios.get(`${BASE_URL}/authors/num/800`);
+    const response = await axios.get(`${BASE_URL}/authors/num/60`);
     authors.value = response.data.data.map(author => ({
       ...author,
       originalImgUrl: author.imgUrl

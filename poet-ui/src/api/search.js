@@ -1,5 +1,5 @@
 // 基础 URL
-const BASE_URL = 'http://localhost:8080';
+const BASE_URL = '/api';
 
 // 模糊搜索作者（by name）
 export const searchAuthor = async (name) => {
