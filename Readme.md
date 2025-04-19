@@ -9,17 +9,23 @@
 - 后端支持基于 Go 的服务
 
 ## 项目结构
-```
 /project-root
-├── /src/          # 前端源代码
-├── /data/         # 唐诗数据
+├── /poet-ui/      # 前端目录
+│   ├── /src/         # 源代码目录
+│   ├── /public/      # 公共资源目录
+│   ├── index.html    # 前端入口文件
+│   ├── package.json  # 项目依赖配置
+│   └── vite.config.js # Vite 配置文件
 ├── /go/           # 后端目录
-│   ├── main.go    # Go 项目入口
-│   ├── app.py     # 辅助脚本
+│   ├── main.go       # Go 项目入口
+│   ├── app.py        # 辅助脚本
 │   ├── tang_poetry.db # 数据库文件
-│   └── /docs/     # 文档目录
-│       └── API.md # API 文档
-└── Readme.md      # 项目说明
+│   ├── go.mod        # Go 模块配置
+│   ├── go.sum        # Go 依赖锁定文件
+│   └── /docs/        # 文档目录
+│       └── API.md    # API 文档
+├── /全唐诗/        # 唐诗数据目录
+└── Readme.md       # 项目说明
 ```
 
 ## 快速开始
