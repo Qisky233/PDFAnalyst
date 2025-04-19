@@ -26,17 +26,6 @@
     <img src="./assets/image/6.png" alt="图片6">
 </div>
 
-<style>
-    .image-row {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
-    .image-row img {
-        width: 48%; /* 每张图片占行宽的48%，留出2%的间隔 */
-    }
-</style>
-
 
 
 
